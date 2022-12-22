@@ -46,4 +46,15 @@ public class FizzBuzzTests
         //Assert
         Assert.Equal(output, result);
     }
+    
+    [Fact]
+    public void WhenGenerateFizzBuzzShoulReturnExpectedOutput()
+    {
+        //Arrange
+        var expectedOutput = "12Fizz";
+        //Act
+        var result = FizzBuzz.Generate();
+        //Assert
+        Assert.Equal(expectedOutput, result);
+    }
 }
