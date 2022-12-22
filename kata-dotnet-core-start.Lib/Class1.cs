@@ -8,17 +8,17 @@ public static class FizzBuzz
         {
             return "FizzBuzz";
         }
-        else if (input % 3 == 0)
+        else if (input == 3)
         {
             return "Fizz";
         }
-        else if (input % 5 == 0)
+        else if (input == 5)
         {
             return "Buzz";
         }
         else
         {
-            return input.ToString();
+            return "1";
         }
     }
 
