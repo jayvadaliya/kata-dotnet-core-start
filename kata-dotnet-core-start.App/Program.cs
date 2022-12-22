@@ -7,5 +7,5 @@ var endWith = 100;
 
 for (int i = startWith; i <= endWith; i++)
 {
-    Console.WriteLine(FizzBuzz.GetFizzBuzz(i));
+    Console.WriteLine(FizzBuzz.Check(i));
 }

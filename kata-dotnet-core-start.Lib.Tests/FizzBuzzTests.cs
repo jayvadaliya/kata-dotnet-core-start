@@ -8,7 +8,7 @@ public class FizzBuzzTests
     public void WhenMultipleOf3ReturnFizz(int input, string output)
     {
         //Act
-        var result = FizzBuzz.GetFizzBuzz(input);
+        var result = FizzBuzz.Check(input);
         //Assert
         Assert.Equal(output, result);
     }
@@ -19,7 +19,7 @@ public class FizzBuzzTests
     public void WhenMultipleOf5ReturnBuzz(int input, string output)
     {
         //Act
-        var result = FizzBuzz.GetFizzBuzz(input);
+        var result = FizzBuzz.Check(input);
         //Assert
         Assert.Equal(output, result);
     }
@@ -31,7 +31,7 @@ public class FizzBuzzTests
     public void WhenMultipleOf3And5ReturnFizzBuzz(int input, string output)
     {
         //Act
-        var result = FizzBuzz.GetFizzBuzz(input);
+        var result = FizzBuzz.Check(input);
         //Assert
         Assert.Equal(output, result);
     }
@@ -42,7 +42,7 @@ public class FizzBuzzTests
     public void WhenNotMultipleOf3And5ReturnInput(int input, string output)
     {
         //Act
-        var result = FizzBuzz.GetFizzBuzz(input);
+        var result = FizzBuzz.Check(input);
         //Assert
         Assert.Equal(output, result);
     }
