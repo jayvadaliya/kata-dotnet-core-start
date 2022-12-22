@@ -3,8 +3,8 @@ namespace kata_dotnet_core_start.Lib.Tests;
 public class FizzBuzzTests
 {
     [Theory]
-    [InlineData(3,"Fizz")]
-    [InlineData(9,"Fizz")]
+    [InlineData(3,Constants.MultipleOf3)]
+    [InlineData(9,Constants.MultipleOf3)]
     public void WhenMultipleOf3ReturnFizz(int input, string output)
     {
         //Act
@@ -14,8 +14,8 @@ public class FizzBuzzTests
     }
     
     [Theory]
-    [InlineData(5,"Buzz")]
-    [InlineData(20,"Buzz")]
+    [InlineData(5, Constants.MultipleOf5)]
+    [InlineData(20, Constants.MultipleOf5)]
     public void WhenMultipleOf5ReturnBuzz(int input, string output)
     {
         //Act
@@ -26,8 +26,8 @@ public class FizzBuzzTests
     
     
     [Theory]
-    [InlineData(15,"FizzBuzz")]
-    [InlineData(60,"FizzBuzz")]
+    [InlineData(15, Constants.MultipleOf3And5)]
+    [InlineData(60, Constants.MultipleOf3And5)]
     public void WhenMultipleOf3And5ReturnFizzBuzz(int input, string output)
     {
         //Act

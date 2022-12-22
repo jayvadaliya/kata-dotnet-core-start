@@ -13,15 +13,15 @@ public static class FizzBuzz
     {
         if (IsMultipleOf3(input) && IsMultipleOf5(input))
         {
-            return "FizzBuzz";
+            return Constants.MultipleOf3And5;
         }
         else if (IsMultipleOf3(input))
         {
-            return "Fizz";
+            return Constants.MultipleOf3;
         }
         else if (IsMultipleOf5(input))
         {
-            return "Buzz";
+            return Constants.MultipleOf5;
         }
         else
         {
