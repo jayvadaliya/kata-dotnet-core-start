@@ -11,15 +11,15 @@ public static class FizzBuzz
     /// </summary>
     public static string Check(int input)
     {
-        if (input % 3 == 0 && IsMultipleOf5(input))
+        if (IsMultipleOf3(input) && IsMultipleOf5(input))
         {
             return "FizzBuzz";
         }
-        else if (input % 3 == 0)
+        else if (IsMultipleOf3(input))
         {
             return "Fizz";
         }
-        else if (input % 5 == 0)
+        else if (IsMultipleOf5(input))
         {
             return "Buzz";
         }
@@ -27,6 +27,11 @@ public static class FizzBuzz
         {
             return input.ToString();
         }
+    }
+
+    private static bool IsMultipleOf3(int input)
+    {
+        return input % 3 == 0;
     }
 
     private static bool IsMultipleOf5(int input)
