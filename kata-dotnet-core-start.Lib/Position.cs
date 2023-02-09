@@ -2,10 +2,10 @@ namespace kata_dotnet_core_start.Lib;
 
 public class Position
 {
-    public Position()
+    public Position(int x, int y)
     {
-        this.X = 0;
-        this.Y = 0;
+        this.X = x;
+        this.Y = y;
     }
 
     public int X { get; set; }
