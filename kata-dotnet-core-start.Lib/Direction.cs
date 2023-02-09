@@ -2,10 +2,10 @@ namespace kata_dotnet_core_start.Lib;
 
 public class Direction
 {
-    public Direction(string direction)
+    public Direction(char direction)
     {
         this.CurrentFacing = direction;
     }
 
-    public string CurrentFacing { get; set; }
+    public char CurrentFacing { get; set; }
 }

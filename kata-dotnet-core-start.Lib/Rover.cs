@@ -2,7 +2,7 @@ namespace kata_dotnet_core_start.Lib;
 
 public class Rover
 {
-    public Rover(int x, int y, string direction)
+    public Rover(int x, int y, char direction)
     {
         Position = new Position(x, y);
         Direction = new Direction(direction);
