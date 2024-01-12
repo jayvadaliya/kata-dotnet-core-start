@@ -33,16 +33,18 @@ public class TicTakToeTests
         Assert.Contains("O", result.Players);
     }
     
-    [Fact]
-    public void Given_Position_Then_Replace_Player_Name_With_Position()
+    [Theory]
+    [InlineData("X", 2)]
+    [InlineData("O", 3)]
+    public void Given_Position_Then_Replace_Player_Name_With_Position(string playerName, int position)
     {
         // Arrange
         var game = new TitTakToe();
         
         // Act
-        game.MovePosition("X", 2);
+        game.MovePosition(playerName, position);
         
         // Assert
-        Assert.Equal("X", game.Board[2]);
+        Assert.Equal(playerName, game.Board[position]);
     }
 }
